@@ -69,6 +69,8 @@ on:
         - 'yes'
         - 'no'
 
+permissions: write-all
+
 jobs:
   prepare:
     name: Prepare for Building
