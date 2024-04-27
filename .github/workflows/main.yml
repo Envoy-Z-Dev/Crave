@@ -27,7 +27,9 @@ on:
       BUILD_DIFFERENT_ROM:
         description: "Command to initialize a different 'repo' project:"
         required: false
-        default: "echo 'Build Starting!'"
+        default: https://github.com/Project-Elixir/manifest.git
+        options: "echo 'Build Starting!'"
+        
       REMOVALS:
         description: "Folders to be removed before syncing:"
         required: false
