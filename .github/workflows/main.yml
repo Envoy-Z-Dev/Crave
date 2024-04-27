@@ -27,7 +27,7 @@ on:
       BUILD_DIFFERENT_ROM:
         description: "Command to initialize a different 'repo' project:"
         required: false
-        default: https://github.com/Project-Elixir/manifest.git
+        default: repo init --depth=1 -u https://github.com/Project-Elixir/manifest -b UNO --git-lfs
         options: "echo 'Build Starting!'"
         
       REMOVALS:
@@ -52,7 +52,7 @@ on:
       BUILD_COMMAND:
         description: 'Command to be used for compiling:'
         required: true
-        default: 'make bacon'
+        default: 'mka bacon'
       BUILD_TYPE:
         description: 'Type of build:'
         required: true
